@@ -8,8 +8,8 @@ public class nameinbox
 	String C ="!";// you can change this one
 	String D ="*";// you can change this one
 	String E ="#";// you can change this one
-	String X ="Do not touch";//DONT CHANGE
-	String Y = "also do not touch";//DONT CHANGE		
+	String X ;//DONT CHANGE
+	String Y ;//DONT CHANGE		
    System.out.println("What's your name?");
    Scanner Q_1 = new Scanner(System.in);
    String name = Q_1.nextLine();
@@ -33,6 +33,11 @@ public class nameinbox
    }else {
 	   System.out.println("Type A, B, C, D, E, or F");//to here if they get else
    }
+   
+   for (int i = 0; i < namelength; i++) {
+      System.out.print(X);
+   }
+   
    if(Y == "_") {
 	   if(namelength==1) {
 		   System.out.println("Why is your name so short? I can't think of any names that are one letter long!");
